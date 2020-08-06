@@ -12,8 +12,6 @@ public class ChancelaService {
 
     private Random random;
 
-    private String blocoChancela;
-
     public Chancela gerarChancela() {
 
         String[] blocos = new String[QUANTIDADE_BLOCOS];
