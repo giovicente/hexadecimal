@@ -8,6 +8,8 @@ public class Chancela {
 
     public Chancela() { }
 
+    public Chancela(String valor) { this.valor = valor; }
+
     @JsonProperty("chancela_comprovante")
     public String getValor() { return valor; }
 

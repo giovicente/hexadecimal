@@ -14,13 +14,15 @@ public class ChancelaService {
     public Chancela gerarChancela() {
 
         String[] blocos = new String[QUANTIDADE_BLOCOS];
-        Chancela chancela = new Chancela();
 
         for (int i = 0; i < QUANTIDADE_BLOCOS; i++) {
             blocos[i] = gerarBloco();
         }
 
-        chancela.setValor(blocos[0].concat(blocos[1]).concat(blocos[2]).concat(blocos[3]).concat(blocos[4]));
+        StringBuilder blocosConcatenados = new StringBuilder();
+        blocosConcatenados.append(blocos[0]).append(blocos[1]).append(blocos[2]).append(blocos[3]).append(blocos[4]);
+
+        Chancela chancela = new Chancela(blocosConcatenados.toString());
         return chancela;
     }
 
