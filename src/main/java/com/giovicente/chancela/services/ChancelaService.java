@@ -23,7 +23,7 @@ public class ChancelaService {
         blocosConcatenados.append(blocos[0]).append(blocos[1]).append(blocos[2]).append(blocos[3]).append(blocos[4]);
 
         Chancela chancela = new Chancela(blocosConcatenados.toString());
-        System.out.println("New Message!");
+        System.out.println("New Message!!!");
         return chancela;
     }
 
